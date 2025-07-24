@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const data = await response.json();
     const products = data.products;
 
-    // Filter products by title (case-insensitive)
+    // Filter products
     const filtered = products.filter(product =>
       product.title.toLowerCase().includes(query)
     );

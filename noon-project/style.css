@@ -304,3 +304,64 @@ footer {
 .product-details-info .buy-btn:hover {
     background: #ffe100;
 }
+
+@media (max-width: 768px) {
+    .navbar .container,
+    .second-navbar .container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+        padding: 0 10px;
+    }
+
+    .nav-links,
+    .footer-links,
+    .footer1-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .product-details-card {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .product-details-image {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .product-details-container {
+        padding: 12px;
+    }
+
+    #productList,
+    .pro {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 16px;
+    }
+
+    .footer-container,
+    .footer-container1 {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .buy-btn,
+    .product-details-info .buy-btn {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+}

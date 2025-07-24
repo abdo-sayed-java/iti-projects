@@ -12,10 +12,10 @@ async function fetchProducts() {
 
     productList.innerHTML = "";
 
-    //loop products to create HTML Element
+    //loop
     products.forEach((product) => {
-      const productDiv = document.createElement("div"); // <div> </div>
-      productDiv.className = "product"; // <div class="product"></div>
+      const productDiv = document.createElement("div"); 
+      productDiv.className = "product";
 
       productDiv.innerHTML = `
             <img src="${product.images[0]}" alt="product image" class="product-image">
@@ -25,7 +25,7 @@ async function fetchProducts() {
             <button class="buy-btn">Buy Now</button>
             `;
 
-      // Add click event to open product.html and pass product data
+      // click event part >>
       productDiv.addEventListener("click", () => {
         localStorage.setItem("selectedProduct", JSON.stringify(product));
         window.location.href = "product.html";
